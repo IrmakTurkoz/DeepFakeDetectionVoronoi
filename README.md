@@ -9,14 +9,15 @@ You can find the instructors from https://github.com/ondyari/FaceForensics
 You can find the instructors from http://dlib.net/
 
 3) To extract the features with voronoi regions use the voronoi regions main, uncomment the 
-#     fileDirectory = "New_new_Sample_set/val/manipulated_sequences/features/"
 
-#      destination = "New_new_Sample_set/val/manipulated_sequences/padded_features/"
-#      videos = [f for f in os.listdir(fileDirectory) if ("mp4") in f]
-#      print(videos)
-#      model.extract_features(fileDirectory,destination,videos,True,show_results =False,frame_rate = 50)
-#      model.pad_images(fileDirectory,destination)
+[code]fileDirectory = "New_new_Sample_set/val/manipulated_sequences/features/"
 
+      destination = "New_new_Sample_set/val/manipulated_sequences/padded_features/"
+      videos = [f for f in os.listdir(fileDirectory) if ("mp4") in f]
+      print(videos)
+      model.extract_features(fileDirectory,destination,videos,True,show_results =False,frame_rate = 50)
+      model.pad_images(fileDirectory,destination)
+[/code]
 
 Use your directory of where you have saved your files. You should also give the shape predictor from step 2 
 as an argument to the main.
